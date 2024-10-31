@@ -6,8 +6,7 @@ class AddTask extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String? newTaskTitle;
-    final taskData =
-        Provider.of<TaskData>(context, listen: false); // Declaring once
+    final taskData = Provider.of<TaskData>(context, listen: false);
 
     return Container(
       padding: EdgeInsets.all(30),
@@ -23,7 +22,7 @@ class AddTask extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          TextField(
+         TextField(
             textAlign: TextAlign.center,
             onChanged: (newText) {
               newTaskTitle = newText;

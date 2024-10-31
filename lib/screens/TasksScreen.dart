@@ -64,7 +64,7 @@ class TasksScreen extends StatelessWidget {
                     Radius.circular(20),
                   ),
                 ),
-                child: TasksList(), // Remove the `tasks` parameter
+                child: TasksList(),
               ),
             ),
           ],

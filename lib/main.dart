@@ -4,11 +4,11 @@ import 'package:tododayapp_p/models/task-provider.dart';
 import 'package:tododayapp_p/screens/TasksScreen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+   MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {

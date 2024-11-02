@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tododayapp_p/providers/task-provider.dart';
+import 'package:tododayapp_p/providers/task_provider.dart';
 import 'package:tododayapp_p/screens/add_task_screen.dart';
 
 import '../widgets/task_tile.dart';
@@ -66,7 +66,7 @@ class TasksScreen extends StatelessWidget {
                       itemCount: tasks.length,
                       itemBuilder: (context, index) {
                         return TaskTile(
-                          taskTitle: tasks[index],
+                          taskTitle: tasks[index]["todo"],
                         );
                       },
                     );
@@ -83,7 +83,7 @@ class TasksScreen extends StatelessWidget {
           showModalBottomSheet(
             context: context,
             builder: (context) {
-              return AddTask();
+              return const AddTask();
             },
           );
         },

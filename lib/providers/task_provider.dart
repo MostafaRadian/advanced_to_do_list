@@ -13,7 +13,8 @@ class TaskProvider extends ChangeNotifier {
 
   Future<void> addTask(String todo) async {
     await TaskService.addItem(todo: todo);
-    await getAllData();
+    data?.tasks.add({"todo": todo});
+    data?.total += 1;
     notifyListeners();
   }
 }
